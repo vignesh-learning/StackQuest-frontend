@@ -1,0 +1,67 @@
+/* mysql.css */
+
+.mysql-theory-container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  color: #00758f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.theory-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.theory-text {
+  background-color: #f9f9f9;
+  padding: 15px;
+  line-height: 1.6;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.topic-navigation {
+  margin-top: 20px;
+}
+
+.topic-navigation button {
+  background-color: #00758f;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.topic-navigation button:hover {
+  background-color: #005f73;
+}
+
+.topic-navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.practice-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.practice-section h2 {
+  font-size: 2rem;
+  color: #00758f;
+}

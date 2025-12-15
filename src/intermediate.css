@@ -1,0 +1,173 @@
+/* Theme Base */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #121212;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 15px 30px;
+  color: white;
+  flex-wrap: wrap;
+}
+body.light-mode .main-header {
+  background-color: #e0e0e0;
+  color: #000;
+}
+.main-header a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+}
+.main-header nav {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+body.light-mode .search-container {
+  background-color: #ccc;
+}
+.search-container input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 5px;
+}
+.search-container i {
+  margin-left: 8px;
+  color: inherit;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Main Content Layout */
+.main-content {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.quiz-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1100px;
+  gap: 20px;
+}
+body.light-mode .quiz-container {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Left Side */
+.left-side {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #444;
+}
+body.light-mode .left-side {
+  border-right: 1px solid #ccc;
+}
+.question-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  color: yellow;
+}
+body.light-mode #feedback {
+  color: #d35400;
+}
+
+/* Navigation Buttons */
+.navigation {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.navigation button {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body.light-mode .navigation button {
+  background-color: #ddd;
+  color: #000;
+}
+.navigation button:hover {
+  background-color: #555;
+}
+body.light-mode .navigation button:hover {
+  background-color: #bbb;
+}
+
+/* Right Side */
+.right-side {
+  flex: 1;
+  padding: 10px;
+}
+#codeEditorContainer {
+  margin-top: 20px;
+}
+#codeEditor {
+  width: 100%;
+  height: 250px;
+}
+#codeEditorContainer button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #00c853;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#codeEditorContainer button:hover {
+  background-color: #00e676;
+}
+
+/* CodeMirror Overrides */
+.CodeMirror {
+  height: auto;
+  min-height: 250px;
+  border: 1px solid #444;
+  font-size: 14px;
+  border-radius: 5px;
+}
+body.light-mode .CodeMirror {
+  border: 1px solid #aaa;
+}

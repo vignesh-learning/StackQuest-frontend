@@ -1,0 +1,74 @@
+.cmd-terminal {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  min-height: 100vh;
+  font-family: monospace;
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.cmd-output {
+  background: #000;
+  padding: 15px;
+  min-height: 150px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.cmd-line {
+  margin-bottom: 5px;
+}
+
+.cmd-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.options-section {
+  margin-top: 15px;
+}
+
+.option-btn {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background-color: #666;
+}
+
+.option-checkbox {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.submit-checkbox {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedback {
+  margin-top: 15px;
+  font-size: 18px;
+}

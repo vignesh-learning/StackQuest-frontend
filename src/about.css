@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0;
+}
+
+.back-btn {
+    display: flex;
+    margin-left: 10px; 
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+header .back-btn {
+    position: absolute;
+    left: 20px;
+}
+
+main {
+    padding: 2rem;
+}
+section {
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+ul {
+    padding-left: 1.5rem;
+    color: black;
+}
+li {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+code {
+    background: #eee;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    color: #c7254e;
+}
+.img-container {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}.section-img-container {
+    text-align: center;
+    margin-top: 0px;
+    top: 0%;
+}
+
+.section-img-container img {
+    width: 100%;
+    max-width: 600px;  
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;  
+}
+
+footer {
+    background-color: #050505;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+section p{
+    color: black;
+} 

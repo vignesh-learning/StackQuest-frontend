@@ -1,0 +1,220 @@
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Container */
+.graphql-theory-container,
+.dark-mode,
+.light-mode {
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark and Light Themes */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.light-mode {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* ===== Header ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  background: #494949;
+  color: white;
+  border-radius: 10px;
+}
+
+.main-header a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* ===== Theory Section ===== */
+.theory-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.theory-text {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dark-mode .theory-text {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.theory-section img {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Topic Navigation */
+.topic-navigation {
+  margin-top: 1rem;
+}
+
+.topic-navigation button {
+  background-color: #424242;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.topic-navigation button:hover {
+  background-color: #95ff95;
+}
+
+.topic-navigation button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* ===== Quiz Section ===== */
+.quiz-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.question-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#feedback {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Navigation buttons inside quiz */
+.navigation {
+  margin-top: 15px;
+}
+
+.navigation button {
+  background-color: #6e6f70;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.navigation button:hover {
+  background-color: #8a8d8f;
+}
+
+/* ===== Checkbox Options ===== */
+#checkboxOptions {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dark-mode #checkboxOptions {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+#checkboxOptions label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#checkboxOptions .option-instruction {
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+#checkboxOptions button {
+  margin-top: 10px;
+  background-color: #28a745;
+  padding: 8px 14px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#checkboxOptions button:hover {
+  background-color: #218838;
+}
+
+/* ===== Code Editor Section ===== */
+#codeEditorContainer {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#codeEditorContainer button {
+  margin-top: 12px;
+  background-color: #28a745;
+  padding: 8px 14px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#codeEditorContainer button:hover {
+  background-color: #218838;
+}
