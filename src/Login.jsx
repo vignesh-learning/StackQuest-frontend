@@ -9,9 +9,11 @@ function Login() {
 
   const handelSubmit = (e) => {
     e.preventDefault();
+    const {VITE_BACKEND_URL}=import.meta.env
 
     axios
-      .post("http://localhost:3001/login", { email, password })
+      .post( `${VITE_BACKEND_URL}/login`,
+        { email, password })
       .then((res) => {
         console.log(result)
         if(result.data === "Success"){

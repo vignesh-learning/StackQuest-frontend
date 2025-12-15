@@ -10,9 +10,10 @@ function Signup() {
 
   const handelSubmit = (e) => {
     e.preventDefault();
+    const {VITE_BACKEND_URL}=import.meta.env
 
     axios
-      .post("http://localhost:3001/register", {
+      .post(`${VITE_BACKEND_URL}/register`, {
         name,
         email,
         password,
@@ -44,7 +45,9 @@ function Signup() {
               autoComplete="off"
               name="name"
               className="form-control rounded-0"
-            />
+              value={name}
+              onChange={e => setName(e.target.value)}
+              />
           </div>
 
           <div className="mb-3">
@@ -57,7 +60,9 @@ function Signup() {
               autoComplete="off"
               name="email"
               className="form-control rounded-0"
-            />
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              />
           </div>
 
           <div className="mb-3">
@@ -70,6 +75,8 @@ function Signup() {
               autoComplete="off"
               name="password"
               className="form-control rounded-0"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
             />
           </div>
 
