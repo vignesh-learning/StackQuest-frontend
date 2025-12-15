@@ -8,7 +8,7 @@ function Complete() {
   const practiceCards = [
     { 
       link: "/html", 
-      image: "html.png", 
+      image: "/public/html.png", 
       title: "Practice HTML", 
       desc: "Learn HTML", 
       details: "HTML", 
@@ -17,7 +17,7 @@ function Complete() {
     },
     { 
       link: "/css", 
-      image: "css.jpeg", 
+      image: "/public/css.jpeg", 
       title: "Practice CSS", 
       desc: "Style web pages", 
       details: "CSS",
@@ -30,7 +30,7 @@ function Complete() {
     },
     { 
       link: "/js", 
-      image: "js.png", 
+      image: "/public/js.png", 
       title: "Practice JavaScript", 
       desc: "Core JS concepts", 
       details: "JavaScript", 
@@ -39,7 +39,7 @@ function Complete() {
     },
      { 
       link: "/advancedjs", 
-      image: "advance javascript.png", 
+      image: "/public/advance javascript.png", 
       title: "Practice Advanced JavaScript", 
       desc: "Core JS concepts", 
       details: "JavaScript", 
@@ -48,7 +48,7 @@ function Complete() {
     },
     { 
       link: "/reactt", 
-      image: "react.jpeg", 
+      image: "/public/react.jpeg", 
       title: "Practice React", 
       desc: "Build UI with React", 
       details: "React", 
@@ -57,7 +57,7 @@ function Complete() {
     },
     { 
       link: "/node", 
-      image: "node.png", 
+      image: "/public/node.png", 
       title: "Practice Node.js", 
       desc: "Backend with Node", 
       details: "Node.js", 
@@ -66,7 +66,7 @@ function Complete() {
     },
      { 
       link: "/express", 
-      image: "node.png", 
+      image: "/public/node.png", 
       title: "Practice Express.js", 
       desc: "Backend with Node", 
       details: "Express.js", 
@@ -75,7 +75,7 @@ function Complete() {
     },
     { 
       link: "/mysql", 
-      image: "mysql.png", 
+      image: "/public/mysql.png", 
       title: "Practice MySQL", 
       desc: "Database fundamentals", 
       details: "MySQL", 
@@ -84,7 +84,7 @@ function Complete() {
     },
     {
       link: "/graphql",
-      image: "GraphQl.png",
+      image: "/public/GraphQl.png",
       title: "Practice GraphQl",
       desc: "Full-stack fundamentals",
       details: "Graphql",
@@ -100,7 +100,7 @@ function Complete() {
     },
      { 
       link: "/django", 
-      image: "Django.png", 
+      image: "/public/Django.png", 
       title: "Practice Django", 
       desc: "Core Django concepts", 
       details: "Django", 
@@ -109,7 +109,7 @@ function Complete() {
     },
      { 
       link: "/flask", 
-      image: "flask.png", 
+      image: "/public/flask.png", 
       title: "Practice Flask", 
       desc: "Core Flask concepts", 
       details: "Flask", 

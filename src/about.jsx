@@ -15,7 +15,7 @@ function About() {
 
       <main>
         <div className="img-container">
-          <img src="/deatils img.jpeg" alt="Details Image" />
+          <img src="/public/deatils img.jpeg" alt="Details Image" />
         </div>
 
         <section>
@@ -45,7 +45,7 @@ function About() {
             <li><strong>APIs:</strong> REST, GraphQL</li>
           </ul>
           <div className="section-img-container">
-            <img src="/front end and back end mixed.jpeg" alt="Key Skills Image" />
+            <img src="/public/front end and back end mixed.jpeg" alt="Key Skills Image" />
           </div>
         </section>
 
