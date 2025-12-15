@@ -11,7 +11,7 @@ import Advanced from "./Advanced";
 import Advancedjs from "./advancedjs";
 import Beginer from "./Beginer"; 
 import Express from "./express";
-import Html from "./Html";
+import Html from "./html";
 import HTMLProgress from "./HtmlProgress";
 import Intermediate from "./intermediate";
 import Js from './js';
