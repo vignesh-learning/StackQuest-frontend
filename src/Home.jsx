@@ -37,20 +37,20 @@ function Home() {
             </div>
           </div>
           <div className="right-side">
-            <img src="/public/images - Copy.jpeg" alt="Training" style={{ borderRadius: "10px", width: "100%", height: "auto" }} />
+            <img src="/images - Copy.jpeg" alt="Training" style={{ borderRadius: "10px", width: "100%", height: "auto" }} />
           </div>
         </div>
       </div>
 
       <footer className="footer">
         <div className="bottom-images">
-          <img src="/public/html.png" alt="HTML" />
-          <img src="/public/css.jpeg" alt="CSS" />
-          <img src="/public/js.png" alt="JavaScript" />
-          <img src="/public/php.png" alt="PHP" />
-          <img src="/public/download.jpeg" alt="Python" />
-          <img src="/public/react.jpeg" alt="React" />
-          <img src="/public/node.png" alt="Node" />
+          <img src="/html.png" alt="HTML" />
+          <img src="/css.jpeg" alt="CSS" />
+          <img src="/js.png" alt="JavaScript" />
+          <img src="/php.png" alt="PHP" />
+          <img src="/download.jpeg" alt="Python" />
+          <img src="/react.jpeg" alt="React" />
+          <img src="/node.png" alt="Node" />
         </div>
       </footer>
 
@@ -83,8 +83,7 @@ function Home() {
             </p>
           </div>
           <div className="right-side">
-            <img src="
-            /coding.jpeg" alt="Full Stack" className="image-box" />
+            <img src="/coding.jpeg" alt="Full Stack" className="image-box" />
           </div>
         </div>
       </div>
