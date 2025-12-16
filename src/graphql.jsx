@@ -47,7 +47,7 @@ function Graphql(){
             <h1>Module 1</h1>
             <a href="/module1" style={{textDecoration:"none",color:"inherit"}}>
             <div className="container-one">
-                <img src="/public/onee.jpg" />
+                <img src="/onee.jpg" />
                 <h3 className="text">Introduction</h3>
             </div>
             </a>
@@ -57,7 +57,7 @@ function Graphql(){
               <h1>Module 2</h1>
               <a href="/module2" style={{textDecoration:"none",color:"inherit"}}>
               <div className="container-two">
-                  <img src="/public/two.jpg" />
+                  <img src="/two.jpg" />
                   <h3 className="text">GraphQL Basics</h3>
               </div>
               </a>
@@ -67,7 +67,7 @@ function Graphql(){
               <h1>Module 3</h1>
               <a href="/module3" style={{textDecoration:"none",color:"inherit"}}>
               <div className="container-three">
-                  <img src="/public/three.jpg" />
+                  <img src="/three.jpg" />
                   <h3 className="text">Backend with GraphQL</h3>
               </div>
               </a>
@@ -77,7 +77,7 @@ function Graphql(){
               <h1>Module 4</h1>
               <a href="/module4" style={{textDecoration:"none",color:"inherit"}}>
               <div className="container-four">
-                  <img src="/public/four.jpeg" />
+                  <img src="/four.jpeg" />
                   <h3 className="text">Frontend with GraphQL</h3>
               </div>
               </a>
@@ -87,7 +87,7 @@ function Graphql(){
               <h1>Module 5</h1>
               <a href="/module5"style={{textDecoration:"none",color:"inherit"}}>
               <div className="container-five">
-                  <img src="/public/five.jpeg" />
+                  <img src="/five.jpeg" />
                   <h3 className="text">Advanced GraphQL</h3>
               </div>
               </a>
@@ -97,7 +97,7 @@ function Graphql(){
                 <h1>Paractice</h1>
                 <a href="/practicegraphql" style={{textDecoration:"none",color:"inherit"}}>
                 <div className="container-six">
-                    <img src="/public/six.jpeg" />
+                    <img src="/six.jpeg" />
                     <h3 className="text">Paractice GraphQL Course</h3>
                 </div>
                 </a>

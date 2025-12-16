@@ -58,13 +58,13 @@ function Home() {
         <div className="quiz-container">
           <div className="left-side">
             <div className="header-top">
-              <img src="/public/time.png" alt="Timer" />
+              <img src="/time.png" alt="Timer" />
             </div>
             <p className="text-content">In just 15+ hours, you will successfully learn web development with a comprehensive course.</p>
           </div>
           <div className="right-side">
             <div className="header-top">
-              <img src="/public/certificate.png" alt="Certificate" />
+              <img src="/certificate.png" alt="Certificate" />
             </div>
             <p className="text-content">You will receive a certificate upon completing the course successfully.</p>
           </div>
@@ -83,7 +83,8 @@ function Home() {
             </p>
           </div>
           <div className="right-side">
-            <img src="/public/coding.jpeg" alt="Full Stack" className="image-box" />
+            <img src="
+            /coding.jpeg" alt="Full Stack" className="image-box" />
           </div>
         </div>
       </div>

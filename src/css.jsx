@@ -46,7 +46,7 @@ function Css() {
 
       <main>
         <div className="header-top" style={{ textAlign: "center" }}>
-          <img src="/public/css css.jpg" alt="CSS Icon" />
+          <img src="/css css.jpg" alt="CSS Icon" />
         </div>
 
         <div className="divider"></div>
@@ -56,7 +56,7 @@ function Css() {
           <h1>🟢 Beginner CSS Topics</h1>
           <a href="/Beginer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="one-container">
-              <img src="/public/onee.jpg" alt="Beginner" />
+              <img src="/onee.jpg" alt="Beginner" />
               <h3 className="text-content">Start your career.....</h3>
             </div>
           </a>
@@ -66,7 +66,7 @@ function Css() {
           <h1>🟡 Intermediate CSS Topics</h1>
           <a href="/Intermediate" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="two-container">
-              <img src="/public/two.jpg" alt="Intermediate"/>
+              <img src="/two.jpg" alt="Intermediate"/>
               <h3 className="text-content">Grow your skills.....</h3>
             </div>
           </a>
@@ -76,7 +76,7 @@ function Css() {
           <h1>🔴 Advanced CSS Topics</h1>
           <a href="/Advanced" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="three-container">
-              <img src="/public/three.jpg" alt="Advanced" />
+              <img src="/three.jpg" alt="Advanced" />
               <h3 className="text-content">Final Learn.......</h3>
             </div>
           </a>
