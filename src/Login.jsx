@@ -7,33 +7,44 @@ function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handelSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const {VITE_BACKEND_URL}=import.meta.env
 
-    axios
-      .post( `${VITE_BACKEND_URL}/login`,
-        { email, password })
-      .then((res) => {
-        console.log(result)
-        if(result.data === "Success"){
-            navigate('/home')
-        }
-      })
-      .catch((err) => console.log(err));
+    const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
+    try {
+      const res = await axios.post(`${VITE_BACKEND_URL}/login`, {
+        email,
+        password,
+      });
+
+      console.log(res.data);
+
+      // adjust based on your backend response
+      if (res.data === "Success") {
+        navigate("/home");
+      } else {
+        alert("Invalid email or password");
+      }
+    } catch (err) {
+      console.log(err);
+      alert("Login failed. Try again.");
+    }
   };
 
   return (
     <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
       <div className="bg-white p-3 rounded w-25">
         <h2>Login</h2>
-        <form onSubmit={handelSubmit}>
+
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label><strong>Email</strong></label>
             <input
               type="email"
               placeholder="Enter email"
               className="form-control rounded-0"
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
@@ -45,17 +56,20 @@ function Login() {
               type="password"
               placeholder="Enter password"
               className="form-control rounded-0"
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
 
-          <Link to="/home" className="btn btn-success w-100 rounded-0">
+          {/* submit button */}
+          <button type="submit" className="btn btn-success w-100 rounded-0">
             Login
-          </Link>
+          </button>
         </form>
 
         <p className="mt-3">Don't have an account?</p>
+
         <Link
           to="/register"
           className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
