@@ -14,14 +14,7 @@ function Login() {
     const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
     try {
-      const res = await axios.post(`${VITE_BACKEND_URL}/login`, {
-        email,
-        password,
-      });
-
-      console.log(res.data);
-
-      // adjust based on your backend response
+      const res = await axios.post(`${VITE_BACKEND_URL}/login`, { email, password });
       if (res.data === "Success") {
         navigate("/home");
       } else {
@@ -37,7 +30,6 @@ function Login() {
     <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
       <div className="bg-white p-3 rounded w-25">
         <h2>Login</h2>
-
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label><strong>Email</strong></label>
@@ -50,7 +42,6 @@ function Login() {
               required
             />
           </div>
-
           <div className="mb-3">
             <label><strong>Password</strong></label>
             <input
@@ -62,15 +53,11 @@ function Login() {
               required
             />
           </div>
-
-          {/* submit button */}
           <button type="submit" className="btn btn-success w-100 rounded-0">
             Login
           </button>
         </form>
-
         <p className="mt-3">Don't have an account?</p>
-
         <Link
           to="/register"
           className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
