@@ -8,25 +8,27 @@ function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const { VITE_BACKEND_URL } = import.meta.env;
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  const { VITE_BACKEND_URL } = import.meta.env;
 
-    try {
-      const res = await axios.post(`${VITE_BACKEND_URL}/login`, {
-        email: email.trim(),
-        password: password.trim(),
-      });
+  try {
+    const res = await axios.post(`${VITE_BACKEND_URL}/login`, {
+      email: email.trim(),
+      password: password.trim(),
+    });
 
-      if (res.data.status === "Success") {
-        navigate("/home");
-      } else {
-        alert("Invalid email or password");
-      }
-    } catch (err) {
+    if (res.data.success) {
+      localStorage.setItem("token", res.data.token);
+      navigate("/home");
+    } else {
       alert("Invalid email or password");
     }
-  };
+
+  } catch (err) {
+    alert(err.response?.data?.message || "Login failed");
+  }
+};
 
   return (
     <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
