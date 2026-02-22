@@ -13,7 +13,7 @@ function Signup() {
     const { VITE_BACKEND_URL } = import.meta.env;
 
     try {
-      await axios.post(`${VITE_BACKEND_URL}/register`, {
+      await axios.post(`${VITE_BACKEND_URL}/signup`, {
         name: name.trim(),
         email: email.trim(),
         password: password.trim(),
