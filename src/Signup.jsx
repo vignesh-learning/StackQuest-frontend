@@ -8,25 +8,22 @@ function Signup() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handelSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const {VITE_BACKEND_URL}=import.meta.env
+    const { VITE_BACKEND_URL } = import.meta.env;
 
-    axios
-      .post(`${VITE_BACKEND_URL}/register`, {
-        name,
-        email,
-        password,
-      })
-      .then((result) => {
-        console.log(result.data);
-        alert("Registration Successful");
-        navigate("/login"); 
-      })
-      .catch((err) => {
-        console.log(err);
-        alert("User already exists or error occurred");
+    try {
+      await axios.post(`${VITE_BACKEND_URL}/register`, {
+        name: name.trim(),
+        email: email.trim(),
+        password: password.trim(),
       });
+
+      alert("Registration Successful");
+      navigate("/login");
+    } catch (err) {
+      alert("User already exists or error occurred");
+    }
   };
 
   return (
@@ -34,49 +31,40 @@ function Signup() {
       <div className="bg-white p-3 rounded w-25">
         <h2>Register</h2>
 
-        <form onSubmit={handelSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label>
-              <strong>Name</strong>
-            </label>
+            <label><strong>Name</strong></label>
             <input
               type="text"
               placeholder="Enter name"
-              autoComplete="off"
-              name="name"
               className="form-control rounded-0"
               value={name}
-              onChange={e => setName(e.target.value)}
-              />
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
           </div>
 
           <div className="mb-3">
-            <label>
-              <strong>Email</strong>
-            </label>
+            <label><strong>Email</strong></label>
             <input
               type="email"
               placeholder="Enter email"
-              autoComplete="off"
-              name="email"
               className="form-control rounded-0"
               value={email}
-              onChange={e => setEmail(e.target.value)}
-              />
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
 
           <div className="mb-3">
-            <label>
-              <strong>Password</strong>
-            </label>
+            <label><strong>Password</strong></label>
             <input
               type="password"
               placeholder="Enter password"
-              autoComplete="off"
-              name="password"
               className="form-control rounded-0"
               value={password}
-              onChange={e => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
 
@@ -85,11 +73,12 @@ function Signup() {
           </button>
         </form>
 
-        <p className="mt-3">
-          Already have an account?
-        </p>
+        <p className="mt-3">Already have an account?</p>
 
-        <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+        <Link
+          to="/login"
+          className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
+        >
           Login
         </Link>
       </div>

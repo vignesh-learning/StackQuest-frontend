@@ -10,19 +10,21 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+    const { VITE_BACKEND_URL } = import.meta.env;
 
     try {
-      const res = await axios.post(`${VITE_BACKEND_URL}/login`, { email, password });
-      if (res.data === "Success") {
+      const res = await axios.post(`${VITE_BACKEND_URL}/login`, {
+        email: email.trim(),
+        password: password.trim(),
+      });
+
+      if (res.data.status === "Success") {
         navigate("/home");
       } else {
         alert("Invalid email or password");
       }
     } catch (err) {
-      console.log(err);
-      alert("Login failed. Try again.");
+      alert("Invalid email or password");
     }
   };
 
@@ -42,6 +44,7 @@ function Login() {
               required
             />
           </div>
+
           <div className="mb-3">
             <label><strong>Password</strong></label>
             <input
@@ -53,11 +56,14 @@ function Login() {
               required
             />
           </div>
+
           <button type="submit" className="btn btn-success w-100 rounded-0">
             Login
           </button>
         </form>
+
         <p className="mt-3">Don't have an account?</p>
+
         <Link
           to="/register"
           className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
